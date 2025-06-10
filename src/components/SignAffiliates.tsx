@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ProfileCard from './ProfileCard';
 
@@ -91,22 +90,6 @@ const SignAffiliates = () => {
       avatar: 'https://pbs.twimg.com/profile_images/1823678912345678912/KpQwRvZm_400x400.jpg',
       url: 'https://x.com/truthonchained',
       followers: '16.3K'
-    },
-    {
-      username: 'franstp0',
-      displayName: 'Frans TP',
-      bio: 'Community manager & social media strategist | Helping crypto projects grow their communities',
-      avatar: 'https://pbs.twimg.com/profile_images/1756234567890123456/QwRvZmKp_400x400.jpg',
-      url: 'https://x.com/franstp0',
-      followers: '8.7K'
-    },
-    {
-      username: '0xbossj',
-      displayName: 'Boss J',
-      bio: 'Yield farming expert & DeFi protocol specialist | Maximizing returns in the decentralized economy',
-      avatar: 'https://pbs.twimg.com/profile_images/1789123456789123456/RvZmKpQw_400x400.jpg',
-      url: 'https://x.com/0xbossj',
-      followers: '10.1K'
     }
   ];
 
@@ -115,7 +98,7 @@ const SignAffiliates = () => {
       <h2 className="text-2xl font-bold crypto-gradient bg-clip-text text-transparent">
         Sign Affiliates
       </h2>
-      <div className="space-y-4 max-h-[800px] overflow-y-auto custom-scrollbar">
+      <div className="space-y-4">
         {affiliates.map((affiliate, index) => (
           <div key={affiliate.username} className="animate-slide-in" style={{ animationDelay: `${index * 0.1}s` }}>
             <ProfileCard {...affiliate} isAffiliate={true} />

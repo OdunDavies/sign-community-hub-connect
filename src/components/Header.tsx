@@ -1,6 +1,6 @@
-
 import React from 'react';
 import { Twitter, Globe, MessageCircle } from 'lucide-react';
+import ClickableImage from './ClickableImage';
 
 const Header = () => {
   return (
@@ -12,7 +12,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <div className="w-24 h-24 md:w-32 md:h-32 rounded-full sign-gradient p-1 float-animation">
-              <img
+              <ClickableImage
                 src="/lovable-uploads/bd2d3ae0-b6fa-4273-9de6-cdbf4aa554af.png"
                 alt="Sign Logo"
                 className="w-full h-full rounded-full object-cover"

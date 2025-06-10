@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '../components/Header';
 import SignAffiliates from '../components/SignAffiliates';
@@ -14,30 +13,34 @@ const Index = () => {
 
       {/* Main Layout */}
       <div className="container mx-auto px-6 py-8">
-        {/* Latest Updates Section - Full width on mobile, 2/3 on desktop */}
-        <div className="mb-16">
-          <div className="lg:w-2/3">
-            <LatestUpdates />
+        {/* Grid Layout for Desktop */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {/* Main Content Area - 2/3 width on desktop */}
+          <div className="lg:col-span-2 space-y-16">
+            {/* Latest Updates Section */}
+            <div>
+              <LatestUpdates />
+            </div>
+
+            {/* Creators Section */}
+            <div>
+              <CreatorsSection />
+            </div>
+
+            {/* My Contributions Section */}
+            <div>
+              <MyContributions />
+            </div>
+          </div>
+
+          {/* Sign Affiliates Section - 1/3 width on desktop, full width on mobile */}
+          <div>
+            <SignAffiliates />
           </div>
         </div>
 
-        {/* Creators Section */}
-        <div className="mb-16">
-          <CreatorsSection />
-        </div>
-
-        {/* My Contributions Section */}
-        <div className="mb-16">
-          <MyContributions />
-        </div>
-
-        {/* Sign Affiliates Section - Below My Contributions on mobile, sidebar on desktop */}
-        <div className="mb-16 lg:fixed lg:top-24 lg:right-8 lg:w-80 lg:max-h-[800px] lg:overflow-y-auto">
-          <SignAffiliates />
-        </div>
-
         {/* Footer */}
-        <footer className="text-center py-8 border-t border-border/50">
+        <footer className="text-center py-8 border-t border-border/50 mt-16">
           <div className="crypto-gradient bg-clip-text text-transparent font-semibold">
             SignCommunityHub - Building the Future Together
           </div>

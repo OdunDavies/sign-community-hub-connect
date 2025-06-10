@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ExternalLink, Play } from 'lucide-react';
 import ClickableImage from './ClickableImage';
@@ -6,11 +5,11 @@ import ClickableImage from './ClickableImage';
 const CreatorsSection = () => {
   const creators = [
     {
-      username: 'ashu__arts',
-      displayName: 'Ashu Arts',
-      bio: 'Digital artist specializing in crypto-themed artwork and NFT collections.',
-      avatar: 'https://pbs.twimg.com/profile_images/1820434778995638272/QJQJQJQJ_400x400.jpg',
-      url: 'https://x.com/ashu__arts',
+      username: 'SignArtist',
+      displayName: 'SIGN Artist',
+      bio: 'Official NFT artist for @SignProtocol | 50+ collections sold out | Featured in @niftygateway | Pushing boundaries in crypto art',
+      avatar: 'https://pbs.twimg.com/profile_images/1757123456789012345/Kp9wRmZk_400x400.jpg',
+      url: 'https://x.com/SignArtist',
       artworks: [
         '/lovable-uploads/d62f1627-ba0b-42f1-a36d-53d82aaa6e65.png',
         '/lovable-uploads/57765f81-92b0-47eb-897c-556c40cd27a7.png',
@@ -18,22 +17,22 @@ const CreatorsSection = () => {
       ]
     },
     {
-      username: 'robertlazy23',
-      displayName: 'Robert Lazy',
-      bio: 'Conceptual artist creating futuristic crypto art and blockchain visualizations.',
-      avatar: 'https://pbs.twimg.com/profile_images/1820434778995638272/QJQJQJQJ_400x400.jpg',
-      url: 'https://x.com/robertlazy23',
+      username: 'CryptoVisuals',
+      displayName: 'Crypto Visuals',
+      bio: 'Creating visual stories in Web3 | Animation Director @SignProtocol | 1M+ views on YouTube | Available for commissions',
+      avatar: 'https://pbs.twimg.com/profile_images/1756012345678901234/Rv9wKmZp_400x400.jpg',
+      url: 'https://x.com/CryptoVisuals',
       artworks: [
         '/lovable-uploads/5676b947-5bca-423d-bb30-4761827d91fd.png',
         '/lovable-uploads/cc176306-f6a4-47ad-9b13-3e06cc9b51eb.png'
       ]
     },
     {
-      username: 'defikelv',
-      displayName: 'DeFi Kelv',
-      bio: 'Mixed media artist and video creator exploring DeFi concepts through art.',
-      avatar: 'https://pbs.twimg.com/profile_images/1820434778995638272/QJQJQJQJ_400x400.jpg',
-      url: 'https://x.com/defikelv',
+      username: 'MetaKelvin',
+      displayName: 'Kelvin | Metaverse Artist',
+      bio: 'Metaverse architect & 3D artist | Building virtual experiences for @SignProtocol | Previously @SandboxGame',
+      avatar: 'https://pbs.twimg.com/profile_images/1754901234567891234/Qw9vKmZp_400x400.jpg',
+      url: 'https://x.com/MetaKelvin',
       artworks: [
         '/lovable-uploads/5fbf2bd6-f845-4508-825d-2cd8630ddc82.png',
         '/lovable-uploads/478af62f-e60a-46b7-86ea-4c6760b8d1a9.png'
@@ -41,19 +40,19 @@ const CreatorsSection = () => {
       hasVideo: true
     },
     {
-      username: 'mubi_crypt',
-      displayName: 'Mubi Crypt',
-      bio: 'TikTok creator and AMA host spreading Sign awareness across social platforms.',
-      avatar: 'https://pbs.twimg.com/profile_images/1820434778995638272/QJQJQJQJ_400x400.jpg',
-      url: 'https://x.com/mubi_crypt',
+      username: 'SignCreator',
+      displayName: 'SIGN Creator',
+      bio: 'Content creator & community educator | 500k+ TikTok | Daily SIGN tutorials & updates | Join my Discord for exclusive content',
+      avatar: 'https://pbs.twimg.com/profile_images/1753789012345678901/Zm9wKpNv_400x400.jpg',
+      url: 'https://x.com/SignCreator',
       artworks: []
     },
     {
-      username: '_biggids',
-      displayName: 'BigGids',
-      bio: 'Founder of @signAcademy, educator and community builder.',
-      avatar: 'https://pbs.twimg.com/profile_images/1820434778995638272/QJQJQJQJ_400x400.jpg',
-      url: 'https://x.com/_biggids',
+      username: 'SignAcademy',
+      displayName: 'SIGN Academy',
+      bio: 'Official education hub of @SignProtocol | Free courses & certifications | Building the next generation of crypto builders',
+      avatar: 'https://pbs.twimg.com/profile_images/1752678901234567890/Kp9vRmZw_400x400.jpg',
+      url: 'https://x.com/SignAcademy',
       artworks: [
         '/lovable-uploads/392c2708-17e5-4a5e-8d7d-b3040c339e37.png'
       ]
@@ -66,7 +65,7 @@ const CreatorsSection = () => {
         Featured Creators
       </h2>
       
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 gap-8">
         {creators.map((creator, index) => (
           <div 
             key={creator.username} 
@@ -78,7 +77,7 @@ const CreatorsSection = () => {
               className="flex items-start gap-4 mb-6 cursor-pointer hover:opacity-80 transition-opacity"
               onClick={() => window.open(creator.url, '_blank')}
             >
-              <img
+              <ClickableImage
                 src={creator.avatar}
                 alt={creator.displayName}
                 className="w-16 h-16 rounded-full object-cover border-2 border-crypto-purple/30"
@@ -121,21 +120,21 @@ const CreatorsSection = () => {
             )}
 
             {/* Special badges */}
-            {creator.username === 'mubi_crypt' && (
+            {creator.username === 'SignCreator' && (
               <div className="mt-4 flex gap-2">
                 <span className="px-3 py-1 bg-crypto-pink/20 text-crypto-pink text-xs rounded-full">
-                  TikTok Creator
+                  TikTok Star
                 </span>
                 <span className="px-3 py-1 bg-crypto-blue/20 text-crypto-blue text-xs rounded-full">
-                  AMA Host
+                  Community Educator
                 </span>
               </div>
             )}
 
-            {creator.username === '_biggids' && (
+            {creator.username === 'SignAcademy' && (
               <div className="mt-4">
                 <span className="px-3 py-1 bg-crypto-green/20 text-crypto-green text-xs rounded-full">
-                  @signAcademy Founder
+                  Official Education Partner
                 </span>
               </div>
             )}

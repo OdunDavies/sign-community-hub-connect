@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ExternalLink, Award, Users, Zap } from 'lucide-react';
 import ClickableImage from './ClickableImage';
@@ -42,7 +41,7 @@ const MyContributions = () => {
             className="flex items-start gap-4 mb-6 cursor-pointer hover:opacity-80 transition-opacity"
             onClick={() => window.open('https://x.com/emlord_01', '_blank')}
           >
-            <img
+            <ClickableImage
               src="https://pbs.twimg.com/profile_images/1820434778995638272/QJQJQJQJ_400x400.jpg"
               alt="EmLord"
               className="w-20 h-20 rounded-full object-cover border-3 border-crypto-purple glow-effect"
