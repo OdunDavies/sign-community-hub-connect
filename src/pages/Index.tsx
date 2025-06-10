@@ -14,16 +14,10 @@ const Index = () => {
 
       {/* Main Layout */}
       <div className="container mx-auto px-6 py-8">
-        {/* Affiliates and Updates Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
-          {/* Latest Updates - 2/3 width */}
-          <div className="lg:col-span-2 order-2 lg:order-1">
+        {/* Latest Updates Section - Full width on mobile, 2/3 on desktop */}
+        <div className="mb-16">
+          <div className="lg:w-2/3">
             <LatestUpdates />
-          </div>
-          
-          {/* Sign Affiliates - 1/3 width */}
-          <div className="lg:col-span-1 order-1 lg:order-2">
-            <SignAffiliates />
           </div>
         </div>
 
@@ -35,6 +29,11 @@ const Index = () => {
         {/* My Contributions Section */}
         <div className="mb-16">
           <MyContributions />
+        </div>
+
+        {/* Sign Affiliates Section - Below My Contributions on mobile, sidebar on desktop */}
+        <div className="mb-16 lg:fixed lg:top-24 lg:right-8 lg:w-80 lg:max-h-[800px] lg:overflow-y-auto">
+          <SignAffiliates />
         </div>
 
         {/* Footer */}
