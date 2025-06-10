@@ -11,9 +11,9 @@ const CreatorsSection = () => {
       avatar: 'https://pbs.twimg.com/profile_images/1820434778995638272/QJQJQJQJ_400x400.jpg',
       url: 'https://x.com/ashu__arts',
       artworks: [
-        'https://images.unsplash.com/photo-1634973357973-f2ed2657db3c?w=400',
-        'https://images.unsplash.com/photo-1639322537228-f710d846310a?w=400',
-        'https://images.unsplash.com/photo-1640340434855-6084b1f4901c?w=400'
+        '/lovable-uploads/d62f1627-ba0b-42f1-a36d-53d82aaa6e65.png',
+        '/lovable-uploads/57765f81-92b0-47eb-897c-556c40cd27a7.png',
+        '/lovable-uploads/60ccb0ff-8270-480f-8366-8647f507be1d.png'
       ]
     },
     {
@@ -23,8 +23,8 @@ const CreatorsSection = () => {
       avatar: 'https://pbs.twimg.com/profile_images/1820434778995638272/QJQJQJQJ_400x400.jpg',
       url: 'https://x.com/robertlazy23',
       artworks: [
-        'https://images.unsplash.com/photo-1642104704074-907c0698cbd9?w=400',
-        'https://images.unsplash.com/photo-1641653365788-e11e8c8ac0d6?w=400'
+        '/lovable-uploads/5676b947-5bca-423d-bb30-4761827d91fd.png',
+        '/lovable-uploads/cc176306-f6a4-47ad-9b13-3e06cc9b51eb.png'
       ]
     },
     {
@@ -34,8 +34,8 @@ const CreatorsSection = () => {
       avatar: 'https://pbs.twimg.com/profile_images/1820434778995638272/QJQJQJQJ_400x400.jpg',
       url: 'https://x.com/defikelv',
       artworks: [
-        'https://images.unsplash.com/photo-1640826344181-ad527c41ae85?w=400',
-        'https://images.unsplash.com/photo-1641653365788-e11e8c8ac0d6?w=400'
+        '/lovable-uploads/5fbf2bd6-f845-4508-825d-2cd8630ddc82.png',
+        '/lovable-uploads/478af62f-e60a-46b7-86ea-4c6760b8d1a9.png'
       ],
       hasVideo: true
     },
@@ -54,7 +54,7 @@ const CreatorsSection = () => {
       avatar: 'https://pbs.twimg.com/profile_images/1820434778995638272/QJQJQJQJ_400x400.jpg',
       url: 'https://x.com/_biggids',
       artworks: [
-        'https://images.unsplash.com/photo-1639322537228-f710d846310a?w=400'
+        '/lovable-uploads/392c2708-17e5-4a5e-8d7d-b3040c339e37.png'
       ]
     }
   ];

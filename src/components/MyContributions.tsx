@@ -22,10 +22,10 @@ const MyContributions = () => {
   ];
 
   const myArtworks = [
-    'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=400',
-    'https://images.unsplash.com/photo-1640340434855-6084b1f4901c?w=400',
-    'https://images.unsplash.com/photo-1642104704074-907c0698cbd9?w=400',
-    'https://images.unsplash.com/photo-1641653365788-e11e8c8ac0d6?w=400'
+    '/lovable-uploads/632106d3-88da-4767-8bcb-3cd1f96417c9.png',
+    '/lovable-uploads/f71569a6-7b28-42df-a640-1d080713aed6.png',
+    '/lovable-uploads/5fbf2bd6-f845-4508-825d-2cd8630ddc82.png',
+    '/lovable-uploads/478af62f-e60a-46b7-86ea-4c6760b8d1a9.png'
   ];
 
   return (
