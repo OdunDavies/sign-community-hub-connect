@@ -5,16 +5,16 @@ import { Twitter, Globe, MessageCircle } from 'lucide-react';
 const Header = () => {
   return (
     <header className="relative overflow-hidden py-12 px-6">
-      <div className="absolute inset-0 crypto-gradient opacity-10"></div>
+      <div className="absolute inset-0 sign-gradient opacity-10"></div>
       
       <div className="container mx-auto relative z-10">
         <div className="flex flex-col md:flex-row items-center gap-8">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <div className="w-24 h-24 md:w-32 md:h-32 rounded-full crypto-gradient p-1 float-animation">
+            <div className="w-24 h-24 md:w-32 md:h-32 rounded-full sign-gradient p-1 float-animation">
               <img
-                src="https://pbs.twimg.com/profile_images/1856754080883044352/H89jYfqg_400x400.jpg"
-                alt="@sign Avatar"
+                src="/lovable-uploads/bd2d3ae0-b6fa-4273-9de6-cdbf4aa554af.png"
+                alt="Sign Logo"
                 className="w-full h-full rounded-full object-cover"
               />
             </div>
@@ -22,7 +22,7 @@ const Header = () => {
 
           {/* Info */}
           <div className="flex-1 text-center md:text-left">
-            <h1 className="text-4xl md:text-6xl font-bold crypto-gradient bg-clip-text text-transparent mb-4">
+            <h1 className="text-4xl md:text-6xl font-bold sign-gradient bg-clip-text text-transparent mb-4">
               SignCommunityHub
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-6 max-w-2xl">
@@ -35,7 +35,7 @@ const Header = () => {
                 href="https://x.com/sign"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="crypto-button flex items-center gap-2"
+                className="sign-button flex items-center gap-2"
               >
                 <Twitter size={20} />
                 @sign
@@ -44,7 +44,7 @@ const Header = () => {
                 href="https://sign.global"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="crypto-button flex items-center gap-2"
+                className="sign-button flex items-center gap-2"
               >
                 <Globe size={20} />
                 Official Website
@@ -53,7 +53,7 @@ const Header = () => {
                 href="https://discord.gg/sign"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="crypto-button flex items-center gap-2"
+                className="sign-button flex items-center gap-2"
               >
                 <MessageCircle size={20} />
                 Discord

@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -53,11 +52,16 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				'crypto-purple': 'hsl(var(--crypto-purple))',
-				'crypto-blue': 'hsl(var(--crypto-blue))',
-				'crypto-pink': 'hsl(var(--crypto-pink))',
-				'crypto-green': 'hsl(var(--crypto-green))',
-				'crypto-orange': 'hsl(var(--crypto-orange))',
+				'sign-orange': 'hsl(var(--sign-orange))',
+				'sign-orange-light': 'hsl(var(--sign-orange-light))',
+				'sign-orange-dark': 'hsl(var(--sign-orange-dark))',
+				'sign-accent': 'hsl(var(--sign-accent))',
+				'sign-secondary': 'hsl(var(--sign-secondary))',
+				'crypto-purple': 'hsl(var(--sign-secondary))',
+				'crypto-blue': 'hsl(var(--sign-accent))',
+				'crypto-pink': 'hsl(var(--sign-secondary))',
+				'crypto-green': 'hsl(142 71% 45%)',
+				'crypto-orange': 'hsl(var(--sign-orange))',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
