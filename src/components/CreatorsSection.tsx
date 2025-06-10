@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { ExternalLink, Play } from 'lucide-react';
+import ClickableImage from './ClickableImage';
 
 const CreatorsSection = () => {
   const creators = [
@@ -99,7 +100,7 @@ const CreatorsSection = () => {
                 <div className="grid grid-cols-2 gap-3">
                   {creator.artworks.map((artwork, artIndex) => (
                     <div key={artIndex} className="relative group overflow-hidden rounded-lg">
-                      <img
+                      <ClickableImage
                         src={artwork}
                         alt={`Artwork by ${creator.displayName}`}
                         className="w-full h-32 object-cover transition-transform group-hover:scale-110"

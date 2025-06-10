@@ -1,8 +1,26 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Twitter, ExternalLink } from 'lucide-react';
 
 const LatestUpdates = () => {
+  useEffect(() => {
+    // Create and append the Juicer script
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'https://www.juicer.io/embed/sign/embed-code.js';
+    script.async = true;
+    script.defer = true;
+    document.head.appendChild(script);
+
+    // Cleanup function to remove the script when component unmounts
+    return () => {
+      const existingScript = document.querySelector('script[src="https://www.juicer.io/embed/sign/embed-code.js"]');
+      if (existingScript) {
+        document.head.removeChild(existingScript);
+      }
+    };
+  }, []);
+
   const tweets = [
     {
       id: '1',
@@ -35,6 +53,15 @@ const LatestUpdates = () => {
       <h2 className="text-2xl font-bold crypto-gradient bg-clip-text text-transparent">
         Latest Updates
       </h2>
+      
+      {/* Juicer Embed */}
+      <div className="crypto-card">
+        <h3 className="text-lg font-semibold mb-4 crypto-gradient bg-clip-text text-transparent">
+          Live Social Feed
+        </h3>
+        <div id="juicer-embed" className="juicer-feed" data-feed-id="sign"></div>
+      </div>
+
       <div className="space-y-4">
         {tweets.map((tweet, index) => (
           <div 

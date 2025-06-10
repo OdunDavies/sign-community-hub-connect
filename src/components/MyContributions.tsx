@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { ExternalLink, Award, Users, Zap } from 'lucide-react';
+import ClickableImage from './ClickableImage';
 
 const MyContributions = () => {
   const contributions = [
@@ -80,7 +81,7 @@ const MyContributions = () => {
           <div className="grid grid-cols-2 gap-4">
             {myArtworks.map((artwork, index) => (
               <div key={index} className="relative group overflow-hidden rounded-lg">
-                <img
+                <ClickableImage
                   src={artwork}
                   alt={`My contribution ${index + 1}`}
                   className="w-full h-40 object-cover transition-transform group-hover:scale-110"
