@@ -5,11 +5,11 @@ import ClickableImage from './ClickableImage';
 const CreatorsSection = () => {
   const creators = [
     {
-      username: 'SignArtist',
+      username: 'ashu__arts',
       displayName: 'SIGN Artist',
       bio: 'Official NFT artist for @SignProtocol | 50+ collections sold out | Featured in @niftygateway | Pushing boundaries in crypto art',
-      avatar: 'https://pbs.twimg.com/profile_images/1757123456789012345/Kp9wRmZk_400x400.jpg',
-      url: 'https://x.com/SignArtist',
+      avatar: 'https://unavatar.io/twitter/ashu__arts',
+      url: 'https://x.com/ashu__arts?s=21',
       artworks: [
         '/lovable-uploads/d62f1627-ba0b-42f1-a36d-53d82aaa6e65.png',
         '/lovable-uploads/57765f81-92b0-47eb-897c-556c40cd27a7.png',
@@ -17,22 +17,22 @@ const CreatorsSection = () => {
       ]
     },
     {
-      username: 'CryptoVisuals',
+      username: 'robertlazy23',
       displayName: 'Crypto Visuals',
       bio: 'Creating visual stories in Web3 | Animation Director @SignProtocol | 1M+ views on YouTube | Available for commissions',
-      avatar: 'https://pbs.twimg.com/profile_images/1756012345678901234/Rv9wKmZp_400x400.jpg',
-      url: 'https://x.com/CryptoVisuals',
+      avatar: 'https://unavatar.io/twitter/robertlazy23',
+      url: 'https://x.com/robertlazy23?s=21',
       artworks: [
         '/lovable-uploads/5676b947-5bca-423d-bb30-4761827d91fd.png',
         '/lovable-uploads/cc176306-f6a4-47ad-9b13-3e06cc9b51eb.png'
       ]
     },
     {
-      username: 'MetaKelvin',
+      username: 'defikelv',
       displayName: 'Kelvin | Metaverse Artist',
       bio: 'Metaverse architect & 3D artist | Building virtual experiences for @SignProtocol | Previously @SandboxGame',
-      avatar: 'https://pbs.twimg.com/profile_images/1754901234567891234/Qw9vKmZp_400x400.jpg',
-      url: 'https://x.com/MetaKelvin',
+      avatar: 'https://unavatar.io/twitter/defikelv',
+      url: 'https://x.com/defikelv?s=21',
       artworks: [
         '/lovable-uploads/5fbf2bd6-f845-4508-825d-2cd8630ddc82.png',
         '/lovable-uploads/478af62f-e60a-46b7-86ea-4c6760b8d1a9.png'
@@ -40,19 +40,19 @@ const CreatorsSection = () => {
       hasVideo: true
     },
     {
-      username: 'SignCreator',
+      username: 'mubi_crypt',
       displayName: 'SIGN Creator',
       bio: 'Content creator & community educator | 500k+ TikTok | Daily SIGN tutorials & updates | Join my Discord for exclusive content',
-      avatar: 'https://pbs.twimg.com/profile_images/1753789012345678901/Zm9wKpNv_400x400.jpg',
-      url: 'https://x.com/SignCreator',
+      avatar: 'https://unavatar.io/twitter/mubi_crypt',
+      url: 'https://x.com/mubi_crypt?s=21',
       artworks: []
     },
     {
-      username: 'SignAcademy',
+      username: '_biggids',
       displayName: 'SIGN Academy',
       bio: 'Official education hub of @SignProtocol | Free courses & certifications | Building the next generation of crypto builders',
-      avatar: 'https://pbs.twimg.com/profile_images/1752678901234567890/Kp9vRmZw_400x400.jpg',
-      url: 'https://x.com/SignAcademy',
+      avatar: 'https://unavatar.io/twitter/_biggids',
+      url: 'https://x.com/_biggids/',
       artworks: [
         '/lovable-uploads/392c2708-17e5-4a5e-8d7d-b3040c339e37.png'
       ]
@@ -120,7 +120,7 @@ const CreatorsSection = () => {
             )}
 
             {/* Special badges */}
-            {creator.username === 'SignCreator' && (
+            {creator.username === 'mubi_crypt' && (
               <div className="mt-4 flex gap-2">
                 <span className="px-3 py-1 bg-crypto-pink/20 text-crypto-pink text-xs rounded-full">
                   TikTok Star
@@ -131,7 +131,7 @@ const CreatorsSection = () => {
               </div>
             )}
 
-            {creator.username === 'SignAcademy' && (
+            {creator.username === '_biggids' && (
               <div className="mt-4">
                 <span className="px-3 py-1 bg-crypto-green/20 text-crypto-green text-xs rounded-full">
                   Official Education Partner
